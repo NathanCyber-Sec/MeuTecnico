@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Técnico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <svg class="logo__icon" viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corpo do controle -->
+  <path d="M18 10h28c8 0 13 6 13 14v6c0 7-4 12-9 12-4 0-6-2-9-6l-2-3H27l-2 3c-3 4-5 6-9 6-5 0-9-5-9-12v-6c0-8 5-14 11-14z"
+        fill="#3D6BFF"/>
+
+  <!-- D-pad (cruz) -->
+  <path d="M20 19h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="#0b1220"/>
+
+  <!-- Botões -->
+  <circle cx="46" cy="19" r="2" fill="#0b1220"/>
+  <circle cx="41" cy="24" r="2" fill="#0b1220"/>
+  <circle cx="51" cy="24" r="2" fill="#0b1220"/>
+  <circle cx="46" cy="29" r="2" fill="#0b1220"/>
+
+ 
+</svg>
+        <span>Meu Técnico<em>Assistência</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-enviar">Como enviar</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#nossa-loja">Nossa loja</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#contato" class="btn btn--small">Orçamento</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Bem-vindo à</p>
+        <h1>Meu Técnico <span>Assistência</span></h1>
+        <p class="hero__subtitle">Conserto especializado de notebooks e placas de vídeo, com diagnóstico transparente e prazo combinado antes de qualquer serviço.</p>
+        <div class="hero__ctas">
+          <a href="#como-enviar" class="btn btn--primary">Saiba como enviar seu equipamento</a>
+          <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__card-row"><span>Diagnóstico</span><strong>Gratuito</strong></div>
+          <div class="hero__card-row"><span>Prazo médio</span><strong>3–5 dias úteis</strong></div>
+          <div class="hero__card-row"><span>Garantia</span><strong>90 dias</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <p class="section__eyebrow">O que fazemos</p>
+      <h2 class="section__title">Nossos serviços</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">🔧</div>
+          <h3>Manutenção em consoles </h3>
+          <p>Manutenção para todos os consoles</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">💾 </div>
+          <h3>Placas de vídeo</h3>
+          <p>Reballing de GPU, troca de pasta térmica e reparo de placas de vídeo dedicadas com superaquecimento ou falha de imagem.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">💾</div>
+          <h3>Formatação e configuração</h3>
+          <p>Instalação de sistema operacional, drivers, otimização de performance e backup de dados antes do serviço.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+ 
+  <!-- COMO ENVIAR -->
+  <section class="section section--alt" id="como-enviar">
+    <div class="container">
+      <p class="section__eyebrow">Passo a passo</p>
+      <h2 class="section__title">Como mandar seu equipamento</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step__number">1</span>
+          <h3>Descreva o problema</h3>
+          <p>Preencha o formulário de contato com o modelo do equipamento e o defeito percebido.</p>
+        </div>
+        <div class="step">
+          <span class="step__number">2</span>
+          <h3>Receba um pré orçamento</h3>
+          <p>Enviamos uma estimativa de valor e prazo antes de qualquer envio ou pagamento.</p>
+        </div>
+        <div class="step">
+          <span class="step__number">3</span>
+          <h3>Envie ou traga</h3>
+          <p>Combine a entrega presencial ou envio via transportadora com embalagem segura.</p>
+        </div>
+        <div class="step">
+          <span class="step__number">4</span>
+          <h3>Acompanhe o reparo</h3>
+          <p>Atualizações por WhatsApp durante todo o processo, até a devolução do equipamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <p class="section__eyebrow">Quem já confiou</p>
+      <h2 class="section__title">Depoimentos de clientes</h2>
+
+      <div class="testimonials">
+        <blockquote class="testimonial">
+          <p>"Atendimento honesto, me explicaram exatamente qual era o problema antes de cobrar qualquer coisa. Recomendo."</p>
+          <cite>— Cliente A.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Trabalho rápido e preço justo. Meu notebook voltou funcionando perfeitamente."</p>
+          <cite>— Cliente B.</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Serviço cuidadoso e transparente do início ao fim. Super indico."</p>
+          <cite>— Cliente C.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSA LOJA -->
+  <section class="section section--alt" id="nossa-loja">
+    <div class="container">
+      <p class="section__eyebrow">Conheça o espaço</p>
+      <h2 class="section__title">Nossa loja</h2>
+      <p class="store-showcase__intro">Mais do que uma assistência técnica — um ambiente pensado para receber você com conforto, transparência e atendimento de qualidade do início ao fim.</p>
+
+      <div class="store-showcase">
+        <article class="store-item">
+          <div class="store-item__media">
+            <img src="images/recepcao.jpeg" alt="Balcão de atendimento da Meu Técnico Assistência" loading="lazy">
+          </div>
+          <div class="store-item__content">
+            <span class="store-item__tag">Atendimento</span>
+            <h3>Recepção e balcão de serviços</h3>
+            <p>Nossa recepção foi projetada para receber você com clareza e profissionalismo. Aqui você descreve o problema do seu equipamento, tira dúvidas e recebe orientação transparente antes de qualquer serviço.</p>
+          </div>
+        </article>
+
+        <article class="store-item store-item--reverse">
+          <div class="store-item__media">
+            <img src="images/Descanso.jpeg" alt="Área de descanso com sofá, café e água para clientes" loading="lazy">
+          </div>
+          <div class="store-item__content">
+            <span class="store-item__tag">Conforto</span>
+            <h3>Área de descanso</h3>
+            <p>Temos uma área de descanso pensada para o melhor conforto do cliente. Sofá confortável, café e água à disposição enquanto cuidamos do seu notebook, console ou placa de vídeo.</p>
+          </div>
+        </article>
+
+        <article class="store-item">
+          <div class="store-item__media">
+            <img src="images/areadafrente.jpeg" alt="Fachada da loja Meu Técnico Assistência" loading="lazy">
+          </div>
+          <div class="store-item__content">
+            <span class="store-item__tag">Visite-nos</span>
+            <h3>Fachada e vitrine</h3>
+            <p>Localizada em ponto de fácil acesso, nossa loja reúne assistência técnica especializada e produtos de games e tecnologia em um só lugar. Traga seu equipamento ou passe para conhecer o espaço.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="container">
+      <h2>Consertamos equipamentos de todas as marcas</h2>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--alt" id="contato">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="section__eyebrow">Fale com a gente</p>
+        <h2 class="section__title">Contato</h2>
+
+        <div class="contact__block">
+          <h3>Horário de funcionamento</h3>
+          <ul class="hours">
+            <li><span>Seg – Sex</span><span>10:30 – 18:00</span></li>
+            <li><span>Sábado</span><span>10:30 – 14:00</span></li>
+            <li><span>Domingo</span><span>Fechado</span></li>
+          </ul>
+        </div>
+
+        <div class="contact__block">
+          <h3>Informações</h3>
+          <p>Todos os orçamentos são feitos por e-mail ou WhatsApp através do formulário ao lado.</p>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contactForm">
+        <label>
+          Nome
+          <input type="text" name="nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Equipamento e defeito
+          <textarea name="mensagem" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Solicitar orçamento</button>
+        <p class="form__status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__showcase">
+        <img src="images/Logodaloja.PNG" alt="Logo Meu Técnico Assistência" class="footer__logo">
+        <p class="footer__tagline">Equipamentos · Games · Manutenção — cuidamos do que conecta você.</p>
+      </div>
+      <div class="footer__inner">
+        <span>© <span id="year"></span> Meu Técnico Assistência</span>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

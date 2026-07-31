@@ -14,20 +14,18 @@ document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', () => nav.classList.remove('nav--open'));
 });
 
-// Formulário de contato (exemplo — troque pelo seu endpoint real)
+// Formulário de contato — redireciona para WhatsApp
+const WHATSAPP_NUMBER = '554196497526';
 const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  // Aqui você conecta com seu backend, EmailJS, Formspree, etc.
-  // Exemplo com fetch:
-  // fetch('https://seu-endpoint.com/contato', {
-  //   method: 'POST',
-  //   body: new FormData(form)
-  // });
+  const nome = form.nome.value.trim();
+  const mensagem = form.mensagem.value.trim();
 
-  status.textContent = 'Mensagem enviada! Entraremos em contato em breve.';
-  form.reset();
+  const texto = `Olá! Meu nome é ${nome}.\n\nEquipamento e defeito:\n${mensagem}`;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
+
+  window.open(url, '_blank', 'noopener,noreferrer');
 });
